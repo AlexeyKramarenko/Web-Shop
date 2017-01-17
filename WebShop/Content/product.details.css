@@ -1,0 +1,96 @@
+﻿#form {
+    position: relative;
+    width: 800px;
+    margin: 100px auto;
+    padding: 0px 15px 0 0;
+}
+
+    #form > img {
+        width: 450px;
+        border: 1px solid black;
+        position: absolute;
+        top: 2px;
+        left: 0;
+    }
+
+
+
+#amount {
+    position: absolute;
+    top: 0;
+    left: 260px;
+}
+
+#diameter {
+    position: absolute;
+    top: 30px;
+    left: 260px;
+}
+
+
+
+#color {
+    position: absolute;
+    top: 75px;
+    left: 260px;
+}
+
+#button {
+    border: 1px solid black;
+    position: absolute;
+    top: 220px;
+    left: 480px;
+    background-color: orange;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    padding: 4px;
+    color: black;
+}
+
+    #button:hover {
+        border: 1px solid black;
+        text-decoration: none;
+        border-radius: 8px;
+        text-align: center;
+        background-color: Highlight;
+        padding: 6px auto 6px auto;
+        cursor: pointer;
+        color: black;
+    }
+
+#info {
+    position: absolute;
+    top: 0px;
+    left: 470px;
+    width: 270px;
+}
+
+table tbody tr td:first-child {
+    width: 125px;
+    font-weight: bold;
+}
+
+td {
+    padding: 10px;
+}
+
+select {
+    width: 50px;
+}
+
+table {
+    width: 250px;
+}
+
+    table tr td:nth-child(1) {
+        text-align: right;
+        min-width: 120px;
+        background-color: rgba(255, 216, 0, 0.63);
+    }
+
+    table tr td:nth-child(2) {
+        min-width: 150px;
+        text-align: left;
+        background-color: rgba(0, 140, 255, 0.36);      
+    }

@@ -1,0 +1,137 @@
+﻿.cell {
+    display: inline-block;
+    width: 201px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-right: -5px;
+    margin-bottom: -1px;
+    background-color: aliceblue;
+}
+
+.productImg {
+    width: 180px;
+    height:180px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #ddecf8;
+}
+
+.button {
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 6px auto 6px auto;
+    background-color: #ffc73f;
+    color: black;
+    text-decoration: none;
+    padding: 3px 1px 2px;
+}
+
+.cell .button img:nth-child(1) {
+    width: 22px;
+    height: 16px;
+}
+
+.button:hover {
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #faf140;
+    padding: 6px auto 6px auto;
+    cursor: pointer;
+    color: black;
+}
+
+#productList {
+    margin: 20px auto;
+    width: 90%;
+}
+
+
+
+ul li:nth-child(1) {
+    border-left: 1px solid black;
+}
+
+#settings {
+    margin: 50px auto auto;
+    background-color: #dcdbdb;
+    padding: 0px 3px 5px 5px;
+    border: 1px solid black;
+    max-width: 715px;
+}
+
+#perPage {
+    width: 75px;
+}
+
+#perPageDiv {
+    position: absolute;
+    top: 50px;
+    left: -100px;
+}
+
+#sortBySize {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/*#materialType {
+    position: absolute;
+    top: 50px;
+    left: 260px;
+}*/
+
+#topPagination {
+    display: inline-block;
+}
+
+#pages_bottom {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.addToCart {
+    height: 20px;
+    cursor: pointer;
+}
+
+.container {
+}
+
+li a {
+    min-width: 16px;
+}
+
+.innerContent {
+    width: 175px;
+    margin: 5px auto 5px 10px;
+}
+
+.currentPage {
+    color: red;
+    background-color: yellow;
+}
+
+.cell img:nth-child(1) {
+    width: 200px;
+    height: 120px;
+}
+
+.cell .addToCart img {
+    height: 16px;
+    width: 22px;
+}
+
+#settings div {
+    display: inline-block;
+    padding: 6px 5px 0 0;
+}

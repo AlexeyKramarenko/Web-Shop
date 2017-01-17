@@ -1,0 +1,42 @@
+﻿#editForm {
+    margin: 20px auto;
+    border: 1px solid black;
+    max-width: 620px;
+    background-color: #d7d7bc;
+    padding: 10px;
+    font-size: 1em;
+}
+
+    #editForm table {
+        display: inline;
+        float: left;
+    }
+
+    #editForm img {
+        width: 350px;
+        margin-left: 10px;
+        border: 1px solid black;
+    }
+
+    #editForm tr:last-child td {
+        padding-top: 30px;
+    }
+
+@media(max-width:450px) {
+    #editForm img {
+        width: 240px;
+    }
+
+    #editForm tr:last-child td {
+        padding-top: 0px;
+    }
+
+    #editForm table tr td input {
+        max-width: 140px;
+    }
+
+    #editForm {
+        padding: 3px;
+        font-size: 0.8em;
+    }
+}

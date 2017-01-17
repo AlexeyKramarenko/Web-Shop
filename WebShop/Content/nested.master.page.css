@@ -1,0 +1,24 @@
+﻿#adminHeader {
+    display: block;
+    width: 374px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-bottom: none;
+    text-align: center;
+    padding: 3px;
+}
+
+#adminNavigation {
+    width: 383px;
+    height: 40px;
+    border-left: 1px solid black;
+}
+
+#adminPanel {
+    margin: 20px auto auto auto;
+    width: 385px;
+}
+
+#shoppingCart {
+    display: none;
+}

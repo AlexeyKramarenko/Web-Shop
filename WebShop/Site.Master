@@ -1,0 +1,226 @@
+﻿<%@ Master Language="C#" EnableTheming="true" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebShop.Site" %>
+
+<%@ Register Src="~/Controls/ShoppingCartControl.ascx" TagPrefix="uc1" TagName="ShoppingCartControl" %>
+<%@ Register Src="~/Controls/VendorInformationControl.ascx" TagPrefix="uc1" TagName="VendorInformationControl" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+    <script src="../Scripts/jquery.signalR-2.2.1.js"></script>
+    <script src="../signalr/hubs"></script>
+    <script src="../Scripts/shopping.cart.js"></script>
+
+    <style>
+        body {
+            margin-left: -1px;
+            margin-right: 0px;
+            margin-bottom: -4px;
+            background-image: url('/App_Themes/Urban/images/transparent_grey.png');
+            background-repeat: repeat;
+            background-position: left top;
+            position: relative;
+        }
+
+        header {
+            width: 100%;
+            min-width: 500px;
+            position: relative;
+            background-color: black;
+            border-bottom: 5px solid orange;
+            background-repeat: repeat-x;
+            background-position: top;
+            margin-top: -10px;
+            height: 130px;
+        }
+
+        #logo {
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            width: 194px;
+            height: 50px;
+        }
+
+        /*ul {
+            list-style-type: none;
+        }*/
+
+        #navigation {
+            position: absolute;
+            top: 89px;
+            left: 430px;
+        }
+
+        #anchors {
+            margin: 5px;
+            color: wheat;
+        }
+
+            #anchors > a {
+                color: wheat;
+            }
+
+        #imaginary_container {
+            margin-top: 20%;
+        }
+
+        .stylish-input-group .input-group-addon {
+            background: white !important;
+        }
+
+        .stylish-input-group .form-control {
+            border-right: 0;
+            box-shadow: 0 0 0;
+            border-color: #ccc;
+        }
+
+        .stylish-input-group button {
+            border: 0;
+            background: transparent;
+        }
+
+        #searchBox {
+            position: absolute;
+            top: 40px;
+            left: 640px;
+            width: 500px;
+        }
+
+        #shoppingCart {
+            color: #354433;
+            padding: 10px 0 10px 15px;
+            font-size: 19px;
+            width: 140px;
+            background-color: yellow;
+            border: 1px solid black;
+            border-right: none;
+            position: absolute;
+            top: 134px;
+            right: 0px;
+            z-index: 5;
+            text-decoration: none;
+        }
+
+        #contactInfo {
+            color: #f79955;
+            position: absolute;
+            top: 30px;
+            left: 260px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            max-width: 350px;
+        }
+
+        @media(max-width:450px) {
+            #shoppingCart {
+                right: auto;
+                left: 0px;
+                border-right: 1px solid black;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                background-color: #238628;
+                display: block;
+                color: #e5e92e;
+                text-align: center;
+                padding: 10px;
+                border: 1px solid black;
+                text-decoration: none;
+                border: 1px solid black;
+                border-left: none;
+            }
+
+                li a:hover {
+                    background-color: #d80dc1;
+                    color: yellow;
+                }
+
+        @media(max-width:1100px) {
+            header #navigation {
+                left: 250px;
+                font-size: 1em;
+            }
+        }
+
+        @media(max-width:800px) {
+            header #navigation {
+                left: 160px;
+                font-size: 0.8em;
+                padding: 2px;
+            }
+        }
+
+        @media(max-width:600px) {
+            header #navigation {
+                left: 1px;
+                font-size: 0.8em;
+                padding: 2px;
+            }
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <style>
+     
+    </style>
+    <header>
+        <asp:Image ID="logo" ClientIDMode="Static" ImageUrl="~/Content/logo.png" runat="server" />
+
+        <ul id="navigation" class="nav nav-pills">
+            <li>
+                <a href="/шнуры">ШНУРЫ</a>
+            </li>
+            <%--   <li>
+                <a href="/статьи">СТАТЬИ</a>
+            </li>--%>
+            <li>
+                <a href="/о_нас">О НАС</a>
+            </li>
+            <li>
+                <a href="/контакты">КОНТАКТЫ</a>
+            </li>
+        </ul>
+
+
+        <uc1:ShoppingCartControl runat="server" ID="ShoppingCartControl" />
+
+        <uc1:VendorInformationControl runat="server" ID="VendorInformationControl" />
+
+
+    </header>
+
+    <div id="content">
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="cph1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+    </footer>
+
+
+</body>
+</html>

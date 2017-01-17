@@ -1,0 +1,42 @@
+﻿#formViewTable {
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+    #formViewTable tr td {
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+        #formViewTable tr td input[type=text], #formViewTable tr td textarea, #formViewTable tr td input[type=file] {
+            width: 180px;
+        }
+
+        #formViewTable tr td:nth-child(1) {
+            max-width: 300px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+@media(max-width:450px) {
+    #formViewTable {
+        max-width: 220px;
+        margin: 20px auto;
+    }
+
+     #formViewTable tr td {
+        padding: 3px; 
+    }
+
+        #formViewTable tr td input[type=text], #formViewTable tr td textarea, #formViewTable tr td input[type=file] {
+            width: 100px;
+        }
+
+        #formViewTable tr td:nth-child(1) {
+            max-width: 250px;
+            font-weight: bold;
+            text-align: right;
+        }
+}

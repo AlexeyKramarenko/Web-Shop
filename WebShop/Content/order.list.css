@@ -1,0 +1,27 @@
+﻿table#orderList {
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: block;
+    width: 500px;
+    margin: 30px auto;
+    font-size: 1em;
+}
+
+    table#orderList tr:hover {
+        background-color: khaki;
+    }
+
+    table#orderList tr td {
+        border: 1px solid black;
+        padding: 4px;
+    }
+
+@media(max-width:450px) {
+    table#orderList {
+        font-size: 0.8em;
+    }
+
+        table#orderList tr td img {
+            width: 70px;
+        }
+}

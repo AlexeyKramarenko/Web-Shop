@@ -1,0 +1,43 @@
+﻿#products tr td img {
+    width: 140px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+tr:hover {
+    background-color: khaki;
+}
+
+td {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+#material {
+    background-color: #dddcdc;
+    padding: 10px;
+    border: 1px solid black;
+    display: block;
+    width: 195px;
+    margin: 30px auto;
+}
+
+#products {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+@media(max-width:450px) {
+    #products {
+        font-size: 0.8em;
+    }
+
+        #products tr td img {
+            width: 70px;
+        }
+}

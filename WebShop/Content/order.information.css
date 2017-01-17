@@ -1,0 +1,111 @@
+﻿#panelOrderSucceded {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    width: 400px;
+    margin: 50px auto 0 auto;
+}
+
+#sendOrder {
+    color: black;
+    background-color: orange;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    margin: 20px auto 30px auto;
+    max-width: 100px;
+}
+
+    #sendOrder:hover {
+        background-color: #ffd800;
+    }
+
+#valSummary {
+    width: 400px;
+    margin: 10px auto;
+}
+
+body {
+    margin-left: -1px;
+    margin-right: 0px;
+    margin-bottom: -4px;
+    background-image: url('App_Themes/Urban/images/transparent_grey.png');
+    background-repeat: repeat;
+    background-position: left top;
+}
+
+table#orderForm {
+    margin: 60px auto;
+    width: 480px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+    table#orderForm tr td {
+        padding: 4px;
+    }
+
+    table#orderForm tr:last-child td {
+        padding: 20px;
+    }
+
+    table#orderForm tr td:first-child {
+        width: 170px;
+    }
+
+    table#orderForm tr.details td:first-child {
+        text-align: right;
+    }
+
+    table#orderForm tr td input, table#orderForm tr td select {
+        width: 220px;
+    }
+
+    table#orderForm tr.header td {
+        text-align: left;
+        background-color: black;
+        color: yellow;
+        padding: 4px 4px 4px 14px;
+    }
+
+    table#orderForm tr:nth-last-child(2) {
+        padding: 20px;
+    }
+
+    table#orderForm tr td div textarea {
+        width: 400px;
+        height: 50px;
+        margin: 10px auto 0px 18px;
+    }
+
+    table#orderForm tr:nth-last-child(1) {
+        text-align: center;
+    }
+
+@media(max-width:400px) {
+    table#orderForm {
+        padding: 2px;
+        width: 210px;
+        font-size: 0.9em;
+    }
+
+        table#orderForm tr td:first-child {
+            width: 60px;
+        }
+
+        table#orderForm tr td input, table#orderForm tr td select {
+            width: 135px;
+        }
+
+        table#orderForm tr:nth-last-child(2) {
+            padding: 2px;
+        }
+
+        table#orderForm tr td div textarea {
+            width: 200px;
+            height: 50px;
+            margin: 5px auto 0px 10px;
+        }
+}

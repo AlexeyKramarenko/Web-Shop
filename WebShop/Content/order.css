@@ -1,0 +1,77 @@
+﻿table#orderedProducts {
+    border-collapse: collapse;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+    table#orderedProducts tr td {
+        border: 1px solid black;
+    }
+
+        table#orderedProducts tr td image {
+            width: 100px;
+        }
+
+    table#orderedProducts tr {
+        text-align: center;
+    }
+
+        table#orderedProducts tr:nth-child(1) td:last-child {
+            padding: 0 3px 0 3px;
+        }
+
+        table#orderedProducts tr td:nth-child(1) {
+            width: 40px;
+            background-color: antiquewhite;
+        }
+
+        table#orderedProducts tr td:nth-child(2) {
+            padding: 0 3px 0 3px;
+            min-width: 100px;
+            background-color: antiquewhite;
+        }
+
+        table#orderedProducts tr td:nth-child(3) {
+            width: 50px;
+            background-color: #d9def3;
+        }
+
+        table#orderedProducts tr td:nth-child(4) {
+            width: 50px;
+            background-color: #ecf786;
+        }
+
+        table#orderedProducts tr td:nth-child(5) {
+            width: 50px;
+            background-color: #eacbcb;
+        }
+
+        table#orderedProducts tr td:nth-child(6) {
+            width: 50px;
+            background-color: #b6faa3;
+        }
+
+        table#orderedProducts tr td:nth-child(7) {
+            /*width: 60px;*/
+            background-color: #ead1b0;
+        }
+
+table#orderDetails {
+    border-collapse: collapse;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+    table#orderDetails tr td {
+        padding: 0 3px 0 3px;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    table#orderDetails tr:nth-child(1) {
+        background-color: antiquewhite;
+    }
+
+    table#orderDetails tr:nth-child(2) {
+        background-color: azure;
+    }

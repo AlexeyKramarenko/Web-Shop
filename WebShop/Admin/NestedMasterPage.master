@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage.master.cs" Inherits="WebShop.Admin.NestedMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <link href="../../../Content/nested.master.page.css" rel="stylesheet" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="cph1" runat="server">
+   
+    <div id="adminPanel">
+        <span id="adminHeader">Раздел администратора</span>
+
+        <div id="adminNavigation">
+            <ul>
+                <li>
+                    <a href="/админ/добавить_шнур">Добавить товар</a></li>
+                <li>
+                    <a href="/админ/список_шнуров">Список товаров</a></li>
+                <li>
+                    <a href="/админ/список_заказов">Список заказов</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
